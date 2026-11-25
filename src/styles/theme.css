@@ -1,0 +1,245 @@
+/*
+ * CDL Drivers — Commercial Logistics Standard Design System
+ * Source: DESIGN.md (colors, typography, rounded values)
+ */
+
+:root {
+  color-scheme: light;
+
+  /* ----- Primary / Dark Navy (00152a) ----- */
+  --color-primary:        #00152a;
+  --color-primary-rgb:    0,21,42;
+  --color-primary-hover:  #00264d;
+  --color-primary-container: #102a43;
+  --color-primary-container-rgb: 16,42,67;
+  --color-primary-fixed: #d1e4ff;
+  --color-primary-fixed-rgb: 209,228,255;
+
+  /* ----- Secondary / Orange-Brown (9d4300) ----- */
+  --color-secondary:      #9d4300;
+  --color-secondary-rgb:  157,67,0;
+  --color-secondary-container: #fd761a;
+  --color-secondary-container-rgb: 253,118,26;
+  --color-secondary-fixed: #ffdbca;
+  --color-secondary-fixed-rgb: 255,219,202;
+
+  /* ----- Tertiary / Dark Navy-Blue (001628) ----- */
+  --color-tertiary:       #001628;
+  --color-tertiary-rgb:   0,22,40;
+  --color-tertiary-container: #0c2b43;
+  --color-tertiary-container-rgb: 12,43,67;
+  --color-tertiary-fixed: #cfe5ff;
+  --color-tertiary-fixed-rgb: 207,229,255;
+
+  /* ----- Surface / Light Blue-White ----- */
+  --color-surface:        #f7f9ff;
+  --color-surface-rgb:    247,249,255;
+  --color-surface-dim:    #c1ddfb;
+  --color-surface-dim-rgb: 193,221,251;
+  --color-surface-bright: #f7f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #edf4ff;
+  --color-surface-container: #e3efff;
+  --color-surface-container-rgb: 227,239,255;
+  --color-surface-container-high: #d8eaff;
+  --color-surface-container-highest: #cee5ff;
+
+  /* ----- Text ----- */
+  --color-text-primary:   #001d32;
+  --color-text-primary-rgb: 0,29,50;
+  --color-text-secondary: #43474d;
+  --color-text-secondary-rgb: 67,71,77;
+  --color-text-muted:     #74777e;
+  --color-text-muted-rgb: 116,119,126;
+
+  /* ----- Borders & Outlines ----- */
+  --color-border:         #c3c6ce;
+  --color-border-rgb:     195,198,206;
+  --color-outline:        #74777e;
+  --color-outline-rgb:    116,119,126;
+  --color-outline-variant: #c3c6ce;
+
+  /* ----- Semantic ----- */
+  --color-error:          #ba1a1a;
+  --color-error-rgb:      186,26,26;
+  --color-error-container: #ffdad6;
+  --color-error-container-rgb: 255,218,214;
+  --color-success:        #15803d;
+  --color-warning:        var(--color-secondary);
+
+  /* ----- Inverse (dark mode support) ----- */
+  --color-inverse-surface: #16334a;
+  --color-inverse-on-surface: #e8f2ff;
+
+  /* ----- Typography ----- */
+  --font-display-lg:      48px;
+  --font-headline-lg:     32px;
+  --font-headline-lg-mobile: 24px;
+  --font-title-md:        20px;
+  --font-body-lg:         18px;
+  --font-body-md:         16px;
+  --font-label-md:        14px;
+  --font-label-sm:        12px;
+
+  --font-family-display:  Inter, system-ui, sans-serif;
+  --font-family-body:     Inter, system-ui, sans-serif;
+  --font-family-mono:     'JetBrains Mono', monospace;
+
+  /* ----- Rounded ----- */
+  --rounded-sm:           0.25rem;
+  --rounded-md:           0.5rem;
+  --rounded-lg:           0.75rem;
+  --rounded-xl:           1rem;
+}
+
+/* Typography base styles */
+html {
+  font-family: var(--font-family-body);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display);
+}
+
+/* Form-specific utility classes using design tokens */
+.form-label {
+  color: var(--color-text-primary);
+  font-weight: 500;
+  font-size: var(--font-label-md);
+  font-family: var(--font-family-mono);
+  letter-spacing: 0.02em;
+  line-height: 20px;
+}
+
+.form-input {
+  background: var(--color-surface-container-low);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--rounded-lg);
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  font-size: var(--font-body-md);
+  font-family: var(--font-family-body);
+  font-weight: 400;
+  line-height: 24px;
+  transition: box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.form-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-input:focus {
+  outline: none;
+  background: var(--color-surface-container);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(var(--color-primary-rgb), 0.08);
+}
+
+.form-input:disabled {
+  background: var(--color-surface-container-lowest);
+  color: var(--color-text-secondary);
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-input.border-error {
+  border-color: var(--color-error);
+}
+
+.form-input.border-error:focus {
+  box-shadow: 0 0 0 4px rgba(var(--color-error-rgb), 0.12);
+}
+
+.form-help {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.form-error {
+  color: var(--color-error);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.form-card {
+  background: var(--color-surface-container);
+  padding: 1.5rem;
+  border-radius: var(--rounded-xl);
+  border: 1px solid var(--color-outline-variant);
+}
+
+.form-card-accent {
+  background: rgba(var(--color-secondary-container-rgb), 0.1);
+  border-color: var(--color-secondary);
+  padding: 1rem;
+  border-radius: var(--rounded-lg);
+}
+
+/* Button utilities */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border-radius: var(--rounded-lg);
+  font-weight: 600;
+  font-size: var(--font-body-md);
+  font-family: var(--font-family-body);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #ffffff;
+  border-color: rgba(var(--color-primary-rgb), 0.14);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-container);
+  box-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.2);
+}
+
+.btn-primary:active {
+  background: var(--color-primary);
+}
+
+.btn-primary:disabled {
+  background: var(--color-surface-container);
+  color: var(--color-text-secondary);
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.btn-secondary:hover {
+  background: rgba(var(--color-secondary-rgb), 0.08);
+}
+
+.btn-tertiary {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: transparent;
+}
+
+.btn-tertiary:hover {
+  background: rgba(var(--color-primary-rgb), 0.08);
+}
