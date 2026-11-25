@@ -52,7 +52,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123401',
     cdlClass: 'A',
     endorsements: ['Tanker', 'Hazmat'],
-    email: 'marcus.chen.demo@gmail.com',
+    email: 'marcus.chen.demo@example.com',
     phoneNumber: '801 555 0101',
   },
   {
@@ -62,7 +62,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123402',
     cdlClass: 'B',
     endorsements: ['Passenger', 'School'],
-    email: 'sofia.delgado.demo@gmail.com',
+    email: 'sofia.delgado.demo@example.com',
     phoneNumber: '801 555 0102',
   },
   {
@@ -72,7 +72,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123403',
     cdlClass: 'A',
     endorsements: ['Double & triple'],
-    email: 'james.okonkwo.demo@gmail.com',
+    email: 'james.okonkwo.demo@example.com',
     phoneNumber: '801 555 0103',
   },
   {
@@ -82,7 +82,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123404',
     cdlClass: 'B',
     endorsements: ['Passenger'],
-    email: 'elena.vasquez.demo@gmail.com',
+    email: 'elena.vasquez.demo@example.com',
     phoneNumber: '801 555 0104',
   },
   {
@@ -92,7 +92,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123405',
     cdlClass: 'A',
     endorsements: ['Hazmat & Fuel Haul'],
-    email: 'tyrell.washington.demo@gmail.com',
+    email: 'tyrell.washington.demo@example.com',
     phoneNumber: '801 555 0105',
   },
   {
@@ -102,7 +102,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123406',
     cdlClass: 'A',
     endorsements: ['School bus'],
-    email: 'priya.singh.demo@gmail.com',
+    email: 'priya.singh.demo@example.com',
     phoneNumber: '801 555 0106',
   },
   {
@@ -112,7 +112,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123407',
     cdlClass: 'B',
     endorsements: ['Air break certification'],
-    email: 'logan.miller.demo@gmail.com',
+    email: 'logan.miller.demo@example.com',
     phoneNumber: '801 555 0107',
   },
   {
@@ -122,7 +122,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123408',
     cdlClass: 'A',
     endorsements: ['Passenger', 'Tanker'],
-    email: 'hannah.kim.demo@gmail.com',
+    email: 'hannah.kim.demo@example.com',
     phoneNumber: '801 555 0108',
   },
   {
@@ -132,7 +132,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123409',
     cdlClass: 'B',
     endorsements: ['Passenger & School'],
-    email: 'diego.fernandez.demo@gmail.com',
+    email: 'diego.fernandez.demo@example.com',
     phoneNumber: '801 555 0109',
   },
   {
@@ -142,7 +142,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123410',
     cdlClass: 'A',
     endorsements: ['Hasmat'],
-    email: 'keisha.morris.demo@gmail.com',
+    email: 'keisha.morris.demo@example.com',
     phoneNumber: '801 555 0110',
   },
   {
@@ -152,7 +152,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123411',
     cdlClass: 'B',
     endorsements: ['Passenger'],
-    email: 'ryan.obrien.demo@gmail.com',
+    email: 'ryan.obrien.demo@example.com',
     phoneNumber: '801 555 0111',
   },
   {
@@ -162,7 +162,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123412',
     cdlClass: 'A',
     endorsements: ['Fuel Haul', 'Tanker'],
-    email: 'amaya.patel.demo@gmail.com',
+    email: 'amaya.patel.demo@example.com',
     phoneNumber: '801 555 0112',
   },
   {
@@ -172,7 +172,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123413',
     cdlClass: 'A',
     endorsements: ['Passenger', 'School'],
-    email: 'jordan.brooks.demo@gmail.com',
+    email: 'jordan.brooks.demo@example.com',
     phoneNumber: '801 555 0113',
   },
   {
@@ -182,7 +182,7 @@ const RAW: RawDriver[] = [
     licenseNumber: '1788123414',
     cdlClass: 'B',
     endorsements: ['Passanger'],
-    email: 'nina.kowalski.demo@gmail.com',
+    email: 'nina.kowalski.demo@example.com',
     phoneNumber: '801 555 0114',
   },
 ]
