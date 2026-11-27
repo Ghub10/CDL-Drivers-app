@@ -10,6 +10,7 @@ import {
   getRemovedDemoProfileIds,
   saveDriverProfile,
   ensureDriverProfileStubForUser,
+  getDriverProfileByUserId,
   type StoredUser,
 } from './storage'
 import {
@@ -45,6 +46,11 @@ export function ensureDemoDrivers(): void {
     saveUser({ ...existingDemo, passwordHash: correctHash, emailVerified: true })
   }
   ensureDriverProfileStubForUser(DEMO_DRIVER_USER_ID, DEMO_DRIVER_EMAIL)
+  // Older visits saved this profile under the name "driver"; show "Demo Driver".
+  const demoProfile = getDriverProfileByUserId(DEMO_DRIVER_USER_ID)
+  if (demoProfile && demoProfile.name !== 'Demo Driver') {
+    saveDriverProfile({ ...demoProfile, name: 'Demo Driver' })
+  }
 
   const suppressed = getRemovedDemoProfileIds()
 
